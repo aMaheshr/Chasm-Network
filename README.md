@@ -110,7 +110,7 @@ docker run -d --restart=always --env-file ./.env -p 3001:3001 --name scout johns
 ### Verify Server
 
 ```console
-# if Responce "OK" Ur Good to go
+# Responce "OK" Ur Good to go
 curl localhost:3001
 ```
 
