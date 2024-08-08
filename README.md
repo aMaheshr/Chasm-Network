@@ -134,10 +134,30 @@ docker logs scout
 ### u can Check leaderboard
 https://scout.chasm.net/leaderboard
 
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+## update to latest version 
+
+- stop Docker
+```console
+docker stop scout && docker rm scout
+```
+
+```console
+docker pull johnsonchasm/chasm-scout:latest
+```
+```console
+docker run -d --restart=always --env-file ./.env -p 3001:3001 --name scout johnsonchasm/chasm-scout
+```
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+## optional :
 ### Kill and stop docker
 ```console
 docker stop scout && docker rm scout
 ```
+
 
 ###  Restart Docker
 ```console
